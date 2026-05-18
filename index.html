@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+<div class="page-wrapper">
+
+    <header>
+        <p class="title-label">// Brain Training //</p>
+        <h1>Memory Matrix</h1>
+        <p class="subtitle">Test your memory now</p>
+    </header>
+
+    <div class="stats-bar">
+        <div class="stat-box">
+            <div class="stat-label">Moves</div>
+            <div class="stat-value" id="moves-val">0</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-label">Time</div>
+            <div class="stat-value" id="timer-val">0:00</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-label">Matched</div>
+            <div class="stat-value" id="matches-val">0/8</div>
+        </div>
+    </div>
+
+    <div class="board-wrapper">
+        <div class="board-frame"></div>
+        <div class="container" id="gameBoard">
+            <!-- Cards injected by JS -->
+        </div>
+    </div>
+
+    <div class="controls">
+        <button class="btn btn-primary" onclick="restartGame()">↺ &nbsp;New Game</button>
+        <button class="btn btn-secondary" onclick="toggleHint()">⚡ Hint</button>
+    </div>
+
+</div>
+
+<!-- Win screen -->
+<div class="win-overlay" id="winOverlay">
+    <div class="win-card">
+        <span class="win-emoji">🏆</span>
+        <div class="win-title">You Win!</div>
+        <div class="win-subtitle">All pairs matched</div>
+        <div class="win-stats">
+            <div class="win-stat">
+                <div class="win-stat-label">Moves</div>
+                <div class="win-stat-value" id="win-moves">0</div>
+            </div>
+            <div class="win-stat">
+                <div class="win-stat-label">Time</div>
+                <div class="win-stat-value" id="win-time">0:00</div>
+            </div>
+        </div>
+        <button class="btn btn-primary" onclick="restartGame()">Play Again</button>
+    </div>
+</div>
+</body>
+</html>
