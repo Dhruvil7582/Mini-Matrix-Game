@@ -6,7 +6,8 @@ A browser-based memory card game built with vanilla HTML, CSS, and JavaScript. F
 
 ## Preview
 
-![Game Board](./screenshots/matched.png)
+<img width="878" height="752" alt="Screenshot 2026-05-18 124558" src="https://github.com/user-attachments/assets/12293a1c-9db1-47ab-8b63-5bb9be38748d" />
+
 
 ---
 
@@ -37,9 +38,9 @@ No frameworks. No dependencies. No build step.
 
 ```
 memory-matrix/
-├── mainGame.html       # Main game file (all CSS & JS embedded)
-├── index.js            # Standalone JS (legacy, not used in enhanced version)
-├── style.css           # Standalone CSS (legacy, not used in enhanced version)
+├── index.html      
+├── script.js            
+├── style.css           
 ├── images/
 │   ├── back.jpg        # Card back face
 │   ├── c++.png
@@ -50,10 +51,6 @@ memory-matrix/
 │   ├── kotlin.jpg
 │   ├── php.png
 │   └── python.jpg
-└── screenshots/
-    ├── matched.png
-    ├── not_matched.png
-    └── back_to_original.png
 ```
 
 ---
@@ -63,7 +60,7 @@ memory-matrix/
 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/memory-matrix.git
+git clone https://github.com/Dhruvil7582/Mini-Matrix-Game.git
 ```
 
 2. Move into the project folder
@@ -72,17 +69,17 @@ git clone https://github.com/your-username/memory-matrix.git
 cd memory-matrix
 ```
 
-3. Open `mainGame.html` in any modern browser
+3. Open `index.html` in any modern browser
 
 ```bash
 # macOS
-open mainGame.html
+open index.html
 
 # Windows
-start mainGame.html
+start index.html
 
 # Linux
-xdg-open mainGame.html
+xdg-open index.html
 ```
 
 No server required — the game runs entirely in the browser.
@@ -129,7 +126,7 @@ No server required — the game runs entirely in the browser.
 
 ## Adding More Cards
 
-To add a new card pair, open `mainGame.html` and find the `CARDS` array near the top of the `<script>` block:
+To add a new card pair, open `script.js` and find the `CARDS` array :
 
 ```javascript
 const CARDS = [
