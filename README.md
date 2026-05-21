@@ -4,7 +4,7 @@ A browser-based memory card game built with vanilla HTML, CSS, and JavaScript. F
 
 ---
 
-### Live Demo:
+### 🚀Live Demo:
 [Click here to chech out the website!](https://dhruvil7582.github.io/Mini-Matrix-Game/)
 
 ## Preview
